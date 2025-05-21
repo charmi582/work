@@ -15,7 +15,10 @@ print("請輸入您的工作時間:")
 a=eval(input())
 print("請輸入您的睡眠時間")
 b=eval(input())
-
-now_data=[[b, a]]
-result=model.predict(now_data)[0]
-print("會運動"if result==1 else "不會運動")
+c=a+b
+while c<24:
+    now_data=[[b, a]]
+    result=model.predict(now_data)[0]
+    print("會運動"if result==1 else "不會運動")
+if c>=24:
+    print("輸入異常")
