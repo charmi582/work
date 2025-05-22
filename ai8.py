@@ -32,4 +32,4 @@ new_data=scaler.transform(now_data)
 result1=log_model.predict(new_data)[0]
 print("您會運動"if result1==1 else "您不會運動")
 result2=knn_model.predict(new_data)[0]
-print("您會運動"if result1==1 else "您不會運動")
+print("您會運動"if result2==1 else "您不會運動")
